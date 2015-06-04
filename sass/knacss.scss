@@ -1,25 +1,3 @@
-/*
-Theme Name: _k
-Theme URI: http://www.koality.fr/
-Author: Fabien CANU / K
-Author URI: http://www.koality.fr/
-Description: Thème WordPress By Koality !
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: _k
-Tags:
-
-Thème WordPress basé sur Underscores (voir ci-dessous) et sur le Mini Frameword qui a du goût : Knacss !
-https://github.com/raphaelgoetter/KNACSS
-
-_k is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-*/
-
-@import "compass";
-
-// KNACSS
 // Sass config file
 // -----------------
 
@@ -47,10 +25,9 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 @import "_11-wordpress"; // WordPress reset and basic styles
 
 /* ----------------------------- */
-/* ==_k_ stylesheet              */
+/* ==own stylesheet              */
 /* ----------------------------- */
 
-@import "_k_header";
-@import "_k_main";
-@import "_k_aside";
-@import "_k_footer";
+/* Here should go your own CSS styles */
+/* You can also link them with a Sass @import */
+/* @import "my-styles"; */
