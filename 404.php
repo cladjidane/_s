@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying 404 pages (not found).
+ * 404
  *
- * @package _s
+ * @package _k
  */
 
 get_header(); ?>
@@ -12,7 +12,7 @@ get_header(); ?>
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', '_s' ); ?></h1>
+					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', '_k' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
@@ -22,9 +22,9 @@ get_header(); ?>
 
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
-					<?php if ( _s_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
+					<?php if ( _k_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
 					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', '_s' ); ?></h2>
+						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', '_k' ); ?></h2>
 						<ul>
 						<?php
 							wp_list_categories( array(
@@ -39,18 +39,10 @@ get_header(); ?>
 					</div><!-- .widget -->
 					<?php endif; ?>
 
-					<?php
-						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', '_s' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-					?>
+				</div>
+			</section>
 
-					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
-
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
 <?php get_footer(); ?>
